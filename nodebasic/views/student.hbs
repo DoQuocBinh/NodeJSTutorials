@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuent</title>
+</head>
+<body>
+    {{#if user}}
+        <h2>User you are from {{user.school}} {{user.country}}</h2>
+    {{else}}
+        <h1 style="color: green;">Hello {{name}}</h1>
+            <form action="/register" method="post">
+            School <input type="text" name="txtSchool" >
+            <br>
+            Country 
+            <select name="txtCountry">
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Lao">Lao</option>
+            </select>
+            <br>
+            <input type="submit" value="Register">
+        </form>
+    {{/if}}
+
+    
+
+    <a href="/">Home page</a>
+</body>
+</html>
